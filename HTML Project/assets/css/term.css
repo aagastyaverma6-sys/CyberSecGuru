@@ -1,0 +1,27 @@
+.term-hero {
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+.term-hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.term-meta {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.term-content {
+  padding: 1.5rem;
+}
+.term-content h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+.callout {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px dashed rgba(125,211,252,0.35);
+  background: rgba(125,211,252,0.08);
+}

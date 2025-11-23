@@ -1,0 +1,51 @@
+.hero {
+  margin-top: 1.5rem;
+  padding: 2rem;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  margin: 0 0 0.5rem;
+}
+.hero p {
+  color: var(--muted);
+  margin: 0.25rem 0 1rem;
+}
+
+/* Term cards */
+.term-card {
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.term-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.term-card p {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.term-card .chip {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+/* Animated corner sheen */
+.term-card::before {
+  content: "";
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 120px; height: 120px;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(125,211,252,0.6), rgba(167,139,250,0.4), transparent 60%);
+  filter: blur(12px);
+  transform: rotate(15deg);
+  animation: spin 9s linear infinite;
+  opacity: 0.45;
+}
+@keyframes spin { to { transform: rotate(375deg); } }

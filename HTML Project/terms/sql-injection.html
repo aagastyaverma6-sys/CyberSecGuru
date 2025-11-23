@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SQL Injection — CyberSec Glossary</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/term.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand gradient-text">CyberSec Glossary</div>
+      <nav><a href="../index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="card term-hero">
+      <h1 class="accent-underline">SQL Injection</h1>
+      <div class="term-meta">
+        <span>Category: Web Security</span>
+        <span>Difficulty: Intermediate</span>
+        <span>Related: <a href="csrf.html">CSRF</a>, <a href="vulnerability.html">Vulnerability</a></span>
+      </div>
+    </section>
+
+    <section class="card term-content">
+      <h2>Definition</h2>
+      <p>SQL Injection is a web attack where malicious SQL statements are inserted into input fields to manipulate a database.</p>
+
+      <div class="callout">
+        <strong>Why it matters:</strong> SQL Injection can expose or destroy sensitive data and compromise entire applications.
+      </div>
+
+      <h2>Examples</h2>
+      <ul>
+        <li>Bypassing login forms with `' OR '1'='1' --`.</li>
+        <li>Extracting entire user tables.</li>
+        <li>Deleting records via injected queries.</li>
+      </ul>
+
+      <h2>Best practices</h2>
+      <ul>
+        <li>Use parameterized queries (prepared statements).</li>
+        <li>Validate and sanitize user input.</li>
+        <li>Limit database privileges for applications.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

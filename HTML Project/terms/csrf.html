@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSRF — CyberSec Glossary</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/term.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand gradient-text">CyberSec Glossary</div>
+      <nav><a href="../index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="card term-hero">
+      <h1 class="accent-underline">Cross-Site Request Forgery (CSRF)</h1>
+      <div class="term-meta">
+        <span>Category: Web Security</span>
+        <span>Difficulty: Intermediate</span>
+        <span>Related: <a href="sql-injection.html">SQL Injection</a>, <a href="authentication.html">Authentication</a></span>
+      </div>
+    </section>
+
+    <section class="card term-content">
+      <h2>Definition</h2>
+      <p>CSRF is an attack that tricks a user’s browser into executing unwanted actions on a web application where they are authenticated.</p>
+
+      <div class="callout">
+        <strong>Why it matters:</strong> CSRF can lead to unauthorized transactions or data changes without the user’s knowledge.
+      </div>
+
+      <h2>Examples</h2>
+      <ul>
+        <li>Forcing a logged-in user to transfer funds.</li>
+        <li>Changing account settings via hidden requests.</li>
+      </ul>
+
+      <h2>Best practices</h2>
+      <ul>
+        <li>Use anti-CSRF tokens.</li>
+        <li>Implement SameSite cookie attributes.</li>
+        <li>Require re-authentication for sensitive actions.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

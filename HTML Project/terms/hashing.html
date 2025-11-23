@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hashing — CyberSec Glossary</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/term.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand gradient-text">CyberSec Glossary</div>
+      <nav><a href="../index.html">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="card term-hero">
+      <h1 class="accent-underline">Hashing</h1>
+      <div class="term-meta">
+        <span>Category: Integrity</span>
+        <span>Difficulty: Intermediate</span>
+        <span>Related: <a href="encryption.html">Encryption</a>, <a href="cve.html">CVE</a></span>
+      </div>
+    </section>
+
+    <section class="card term-content">
+      <h2>Definition</h2>
+      <p>Hashing is a one-way mathematical transformation that converts input data into a fixed-length string, used to verify integrity.</p>
+
+      <div class="callout">
+        <strong>Why it matters:</strong> Hashes ensure that data has not been altered or tampered with.
+      </div>
+
+      <h2>Examples</h2>
+      <ul>
+        <li>SHA-256 for blockchain transactions.</li>
+        <li>MD5 checksums for file downloads.</li>
+        <li>Password storage with salted hashes.</li>
+      </ul>
+
+      <h2>Best practices</h2>
+      <ul>
+        <li>Use modern algorithms (SHA-2, SHA-3).</li>
+        <li>Never store plain hashes of passwords—always salt them.</li>
+        <li>Verify file integrity after transfers.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
